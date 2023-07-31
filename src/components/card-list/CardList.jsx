@@ -23,14 +23,12 @@ const CardList = () =>
             {
                 items.length == 0 ? <Preloader/> : (
                     <>
-                        <h3>Card List</h3>
                         {items.map(
                             (item, i) => <Card item={item} key={i} />
                         )}
                     </>
                 )
-            }
-            
+            }            
         </div>
     )
 }

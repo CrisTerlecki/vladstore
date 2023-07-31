@@ -1,13 +1,13 @@
-import BaseForm from "../components/base-form/BaseForm";
+import AltaForm from "../components/alta-form/AltaForm";
 import MainLayout from "../layout/main/MainLayout";
 
 export default function Alta()
 {
     return(
         <MainLayout>
-            <div>
-                Alta                               
-                <BaseForm/> 
+            <div className="card">
+                <h3>Alta de producto</h3>
+                <AltaForm/>
             </div>
         </MainLayout>
     )

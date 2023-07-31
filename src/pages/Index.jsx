@@ -15,15 +15,18 @@ export default function Index()
     return(        
         <MainLayout>
             <div>
-                <div>{busqueda}</div>
+                <h1 class="section__title">Bienvenido a VladStore!</h1>    
+                <h2 class="section__subTitle">Los más vendidos</h2>   
+                
+                <div className="search-bar">{busqueda}</div>
                 <input type="search" onInput={
                     (e) => 
                     {
                         searchParams.set('q', e.target.value)
                         setSearchParams(searchParams)
                     }
-                }/>  
-                <h2>Cards</h2>         
+                }/>   
+                     
                 <CardList/>
             </div>
         </MainLayout>

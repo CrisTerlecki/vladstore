@@ -1,0 +1,248 @@
+// Body
+body{
+  background-color: #b3b1b1;
+  font-family: 'Montserrat', sans-serif;  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Estilos para el header
+header{
+  background-color: #333;
+  padding: 20px;
+  margin: -8px;
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .brand{
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      text-decoration: none;
+      color: #fff;
+      .img-brand {
+        width: 150px;
+        height: 30px;
+        margin-right: 5px;
+      }
+    }
+    .nav-ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      .nav-list{
+        display: inline-block;
+        margin-left: 10px;
+        position: relative;
+        .nav-link{
+          display: block;
+          color: white;
+          text-decoration: none;
+          padding: 10px;
+          border-radius: 3px;
+          &:hover{
+            background-color: darken(#333, 4%);
+          }
+        }
+      }
+    }
+    .cart{
+      position: relative;
+      padding: 6px;
+      border-radius: 3px;
+      &:hover{
+        background-color: darken(#333, 4%);
+      }
+      .cart-img{
+        width: 40px;
+        height: 40px;
+      }      
+      .cart-counter{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background-color: red;
+        color: white;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+// Estilos para el main
+main{
+  flex-grow: 1;
+  padding: 10px;
+
+  .section__title{
+    text-align: center;
+    font-variant: small-caps;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .section__subTitle{
+    font-variant: small-caps;
+  }  
+  .search-bar{      
+    input[type="text"]{
+      font-family: 'Montserrat', sans-serif;
+      padding: 10px;
+      border-radius: 3px;
+      border: none;
+      background-color: #555;
+      color: #fff;
+      &::placeholder{
+        color: #fff;
+      }
+    }
+    button{
+      font-family: 'Montserrat', sans-serif;
+      padding: 10px 10px;
+      border-radius: 3px;
+      background-color: #555;
+      color: #fff;
+      margin-left: 5px;
+      border: none;
+      cursor: pointer;
+      &:hover{
+        background-color: darken(#333, 4%);
+      }
+    }
+  }
+  .card{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    .card__form{
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      input,textarea,select,button{
+        margin-bottom: 10px;
+        font-family: 'Montserrat', sans-serif;
+      }
+      img{        
+        display: none;
+        max-width: 200px; 
+        max-height: 200px;
+      }
+      button{
+        padding: 10px 10px;
+        border-radius: 3px;
+        background-color: #555;
+        color: #fff;
+        margin-top: 10px;
+        border: none;
+        cursor: pointer;
+        &:hover{
+          background-color: darken(#333, 4%);
+        }
+      }
+    }
+    .card__nosotros{
+      font-size: 32px;
+      font-variant: small-caps;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+    .card__index{
+      display: flex;    
+      .card__image{
+        flex: 0 0 200px;
+        margin-right: 10px;
+        img{
+          border: 2px solid #ccc;
+          width: 200px;
+          height: 200px;
+          border-radius: 5px;
+        }
+      }
+      .card__content{
+        flex: 1;
+        .card__title{
+          font-size: 20px;
+        }
+        .card__description{
+          color: black;
+        }
+        .card__price{
+          font-weight: bold;
+          font-size: 25px;
+          margin-right: 10px;
+        }
+        .card__actions{
+          display: flex;
+          .card__detalle, .card__cart{
+            padding: 10px 10px;
+            margin-right: 10px;
+            border-radius: 3px;
+            background-color: #555;
+            color: #fff;
+            text-decoration: none;
+            &:hover{
+              background-color: darken(#333, 4%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#nosotros{
+  margin: 8px -8px;
+  background-image: url("../img/tienda.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Estilos para el footer
+footer{
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin-top: auto;
+  margin: -8px;
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .social-icons{
+      a.social-icon{
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
+        img{
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    .footer-links{
+      a{
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .footer-info{
+      p{
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
