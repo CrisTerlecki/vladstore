@@ -18,8 +18,8 @@ export default function Index()
                 <h1 class="section__title">Bienvenido a VladStore!</h1>    
                 <h2 class="section__subTitle">Los más vendidos</h2>   
                 
-                <div className="search-bar">{busqueda}</div>
-                <input type="search" onInput={
+                <div>{busqueda}</div>
+                <input className="search-bar" type="search" placeholder="Buscar" value={busqueda} onChange={
                     (e) => 
                     {
                         searchParams.set('q', e.target.value)

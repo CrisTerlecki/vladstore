@@ -4,6 +4,7 @@ export default function Nosotros()
 {
     return(
         <MainLayout>
+            <div id="nosotros">
                 <div class="card">
                     <h1 class="card__nosotros">Quienes somos?</h1>
                     <p>Bienvenido a VladStore, tu destino número uno para encontrar los mejores juguetes para niños de todas las edades. Nos enorgullece ofrecer una amplia selección de juguetes divertidos, educativos y de alta calidad que harán las delicias de tus pequeños.</p>
@@ -18,6 +19,7 @@ export default function Nosotros()
                     <p>Nuestros horarios de atención de lunes a viernes son: <br/>08:00 a 13:00<br/>15:30 a 20:00</p>
                     <p>Si quiere ponerse en contacto con nosotros por favor ir a <a href="/contacto">Contacto</a></p>
                 </div> 
+            </div>
         </MainLayout>
     )
 }

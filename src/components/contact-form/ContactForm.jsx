@@ -23,8 +23,11 @@ const ContactForm = () =>
         <FormContext.Provider value={formService}>
             {console.log(formData)}
             <div className="card__form"> 
-                <FormField name={'nombre'}/>              
+                <label>Nombre:</label>
+                <FormField name={'nombre'}/> 
+                <label>e-mail:</label>             
                 <FormField name={'e-mail'}/>
+                <label>Comentarios:</label>
                 <FormArea name={'comentarios'}/>
                 <button onClick={send}>Enviar</button>
             </div>

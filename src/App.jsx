@@ -32,12 +32,12 @@ const router = createBrowserRouter([
 const App = () => 
 {
     return(    
-        <div>
+        <>
             <RouterProvider 
                 router={router} 
                 fallbackElement={<Nosotros />} /* Es el elemento que se va a estar renderizando cuando no haya 'macho',es decir cuando no exista la ruta establecida */
             />
-        </div>
+        </>
     )
 }
 
