@@ -5,7 +5,7 @@ const FormField = ({name}) =>
 {
     const ctx = useContext(FormContext); // Obtengo el formService
 
-    const [val, setVal] = useState(ctx.get(name))
+    const [val] = useState(ctx.get(name))
 
     return (
         <input 

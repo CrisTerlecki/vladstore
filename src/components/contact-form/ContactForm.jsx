@@ -15,7 +15,6 @@ const ContactForm = () =>
 
     const send = () =>
     {
-        {console.log('Datos del fomulario: ', formData)}
         alert('Enviando formulario...')
     }
 
