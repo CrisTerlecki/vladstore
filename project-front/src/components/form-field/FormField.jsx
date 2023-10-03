@@ -14,7 +14,7 @@ const FormField = ({name}) =>
             placeholder={name.toUpperCase()}
             onChange={
                 (e) => ctx.set(name, e.target.value)
-            }/>
+        }/>
     )
 }
 

@@ -12,8 +12,8 @@ const CardList = () =>
 
     useEffect(() =>
     {
-        if (items.length == 0)
-            fetch('https://645ec9f5f9c0732c342fcddc.mockapi.io/Productos')
+        if (items.length === 0)
+            fetch('http://localhost:5000/catalogo')
                 .then(res => res.json())
                 .then(datos => setItems(datos))
     })
@@ -21,7 +21,7 @@ const CardList = () =>
     return(
         <div>
             {
-                items.length == 0 ? <Preloader/> : (
+                items.length === 0 ? <Preloader/> : (
                     <>
                         {items.map(
                             (item, i) => <Card item={item} key={i} />

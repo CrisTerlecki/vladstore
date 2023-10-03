@@ -14,7 +14,7 @@ export default function Detalle()
 
     useEffect(() =>
     {
-        if (item == null)
+        if (item === null)
             fetch('https://645ec9f5f9c0732c342fcddc.mockapi.io/Productos/'+id)
                 .then(res => res.json())
                 .then(datos => setItem(datos))
@@ -24,7 +24,7 @@ export default function Detalle()
         <MainLayout>
             <div>Detalle</div>
             {
-                item == null ? <Preloader/> : (
+                item === null ? <Preloader/> : (
                     <Card item={item} />
                 )
             }            
