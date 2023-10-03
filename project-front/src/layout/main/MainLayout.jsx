@@ -7,7 +7,7 @@ const MainLayout = ({children, titulo}) =>
             <header>
                 <nav>
                     <a href="/" class="brand">
-                    <img class="img-brand" src="./logo.png" alt="vladstore"/>
+                    <img class="img-brand" src="../logo.png" alt="vladstore"/>
                     </a>
                     <ul class="nav-ul">
                         <li class="nav-list"><NavLink className={'nav-link'} to='/'>Home</NavLink></li>
@@ -16,7 +16,7 @@ const MainLayout = ({children, titulo}) =>
                         <li class="nav-list"><NavLink className={'nav-link'} to='/alta'>Alta</NavLink></li>
                     </ul>
                     <div class="cart">
-                        <a href="#"><img class="cart-img" src="./img/carrito.png" alt="Carrito de compra"/></a>
+                        <a href="#"><img class="cart-img" src="../img/carrito.png" alt="Carrito de compra"/></a>
                         <span class="cart-counter">0</span>
                     </div>
                 </nav>                
@@ -30,10 +30,10 @@ const MainLayout = ({children, titulo}) =>
             <footer>
                 <div class="footer-content">
                     <div class="social-icons">
-                        <a href="#" class="social-icon"><img src="./img/facebook_icon.png" alt="Facebook"/></a>
-                        <a href="#" class="social-icon"><img src="./img/twitter_icon.png" alt="Twitter"/></a>
-                        <a href="#" class="social-icon"><img src="./img/instagram_icon.png" alt="Instagram"/></a>
-                        <a href="#" class="social-icon"><img src="./img/linkedin_icon.png" alt="LinkedIn"/></a>
+                        <a href="#" class="social-icon"><img src="../img/facebook_icon.png" alt="Facebook"/></a>
+                        <a href="#" class="social-icon"><img src="../img/twitter_icon.png" alt="Twitter"/></a>
+                        <a href="#" class="social-icon"><img src="../img/instagram_icon.png" alt="Instagram"/></a>
+                        <a href="#" class="social-icon"><img src="../img/linkedin_icon.png" alt="LinkedIn"/></a>
                     </div>
                     <div class="footer-links">
                         <a href="#">Términos y condiciones</a>
