@@ -2,10 +2,6 @@ import {useEffect, useState} from "react";
 import Card from "../card/Card";
 import Preloader from "../preloader/Preloader";
 
-/*
-Contexto: RouterProvider
-*/
-
 const CardList = () => 
 {
     const [items, setItems] = useState([])
@@ -20,15 +16,13 @@ const CardList = () =>
 
     return(
         <div>
-            {
-                items.length === 0 ? <Preloader/> : (
-                    <>
-                        {items.map(
-                            (item, i) => <Card item={item} key={i} />
-                        )}
-                    </>
-                )
-            }            
+            {items.length === 0 ? <Preloader/> : (
+                <>
+                    {items.map(
+                        (item, i) => <Card item={item} key={i} />
+                    )}
+                </>
+            )}            
         </div>
     )
 }

@@ -1,10 +1,11 @@
 const mongoose = require('mongoose')
 
 const schema = new mongoose.Schema({
+    'id': {type: Number, unique: true},
     'titulo': String,
-    'precio': String,
+    'precio': Number,
     'descripcion': String,
-    'id': String
+    'imagen': String
 })
 
 const cardModel = mongoose.model('Card', schema, 'card')
